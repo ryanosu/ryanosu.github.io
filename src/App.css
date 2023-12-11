@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+}
+
+.app-container {
+  position: relative;
+}
+
+.typeAnimation-container {
+  position: absolute;
+  top: 5%; 
+  left: 37%;
+  color:  #405cf5;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.cubemanAnimation-container{
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  will-change: transform;
+  width: 1500px;
+  height: 1001px;
+  background-color: aqua;
+  position: absolute;
+  transform: translate(-25%, -25%) scale(0.25);
+  left: 25%;
+  top: 25%; 
+  background-image: url('../public/cubeman.png');
+  animation: cubeman 0.5s steps(21) infinite;
+}
+
+@keyframes cubeman{
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -31500px 0;
+  }
+}
+
+.button-9 {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  appearance: button;
+  background-color: #405cf5;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  left: 36%;
+  top: 55%;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+.github{
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  appearance: button;
+  background-color: #405cf5;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  left: 43%;
+  top: 15%;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+.github:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
