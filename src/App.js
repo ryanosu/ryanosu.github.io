@@ -8,15 +8,21 @@ function App() {
     <>
       <Particles />
 
-      <a href="https://github.com/ryanosu" target="_blank" rel="noopener noreferrer">
-        <button class="github">Github</button>
+      <a href="http://health-tracker-next.us-east-2.elasticbeanstalk.com/" target="_blank" rel="noopener noreferrer">
+        <button class="heartButton">Launch Health Tracker</button>
       </a>
+
+      <div className='heartAnimation-container'></div>
       
       <a href="https://ryanosu.github.io/cubeman-platformer/" target="_blank" rel="noopener noreferrer">
         <button class="button-9">Play Cubeman</button>
       </a>
 
       <div className='cubemanAnimation-container'></div>
+
+      <a href="https://github.com/ryanosu" target="_blank" rel="noopener noreferrer">
+        <button class="github">Github</button>
+      </a>
 
       <div className='typeAnimation-container'>
         <TypeAnimation

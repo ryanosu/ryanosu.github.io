@@ -86,3 +86,51 @@
 .github:focus {
   box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
 }
+
+.heartAnimation-container{
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  will-change: transform;
+  width: 15px;
+  height: 15px;
+  background-color: aqua;
+  position: absolute;
+  transform: translate(-25%, -25%) scale(15);
+  left: 55%;
+  top: 44%; 
+  background-image: url('../public/heart-pulse.png');
+  animation: heart 0.5s steps(6) infinite;
+}
+
+@keyframes heart{
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 90px 0;
+  }
+}
+
+.heartButton{
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  appearance: button;
+  background-color: #405cf5;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  left: 51%;
+  top: 55%;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+.heartButton:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
