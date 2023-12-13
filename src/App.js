@@ -8,7 +8,7 @@ function App() {
     <>
       <Particles />
 
-      <a href="http://health-tracker-next.us-east-2.elasticbeanstalk.com/" target="_blank" rel="noopener noreferrer">
+      <a href="http://health-tracker.us-east-2.elasticbeanstalk.com/" target="_blank" rel="noopener noreferrer">
         <button class="heartButton">Launch Health Tracker</button>
       </a>
 

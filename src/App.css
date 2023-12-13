@@ -94,7 +94,7 @@
   will-change: transform;
   width: 15px;
   height: 15px;
-  background-color: aqua;
+  
   position: absolute;
   transform: translate(-25%, -25%) scale(15);
   left: 55%;
